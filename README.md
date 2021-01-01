@@ -2,9 +2,13 @@
 FILE BASED KEY-VALUE DATA STORE
 
 All the code I have tested on a file named “example.json”.
+
 File Path : First the code will ask for the path of the file. If the file path is not provided it will use a provided default path.
+
 User Input: User will provide the key, time to live for the key, and the json object. I have used a manually created json object named as “js_object”.
+
 Functions:
+
 1.	Create(): 
 It will take three arguments key, json object and time to live. It will take care of the key is string or not and length of key(<32). 
 It will also check the size of the json object (<16KB). 
@@ -19,7 +23,7 @@ It will take the key and simply deletes the corresponding key value pair.
 
 
 Threading :
-For making it a safe data store I have used mutex lock. So that at any time only one user can access the any of theses functions.
+For making it a safe data store I have used mutex lock. So that at any time only one user can access any of theses functions.
 
 
 
