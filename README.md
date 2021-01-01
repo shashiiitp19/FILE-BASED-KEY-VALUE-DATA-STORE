@@ -18,7 +18,7 @@ After writing this json object, it will check the size of the “example.json”
 It will take the key as an argument. It will check if the key is expired or not by comparing the current time with the added time(current time + time to live) during the creation.
 If it is expired then Read() will simply delete it. Otherwise it will return the value corresponding to that particular key.
 
-3.	Delete()
+3.	Delete():
 It will take the key and simply deletes the corresponding key value pair.
 
 
